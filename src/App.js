@@ -1,12 +1,10 @@
-import Fform from './component/Fform';
-
+import React from "react"
 import './App.css';
-
+import Emi from "./Loan/Emi";
 function App() {
   return (
     <div className="App">
- 
-   <Fform/>
+      <Emi />
     </div>
   );
 }
