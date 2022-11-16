@@ -5,13 +5,11 @@ import "./Style.css";
 function showTable(amount, rate, month) {
 
   console.log(amount, rate, month + " Akarsh");
-  
+
   const interests = (amount * (rate * 0.01)) / month;
   const emipermonth = ((amount / month) + interests).toFixed(2);
-
-
   let EmiDEtails = [];
-  for (let i = 1; i <= month; i++){
+  for (let i = 1; i <= month; i++) {
     EmiDEtails.push(emipermonth);
   }
   console.log(EmiDEtails);
@@ -32,6 +30,18 @@ const Result = (props) => {
           );
         })}
       </div>
+      <table border="2px">
+        <tr>
+          <th>Total Months</th>
+          <th>EMI per month</th>
+        </tr>
+        {emidates.map((items, index) => (
+          <tr >
+            <td>Month {index + 1}</td>
+            <td> {items.month}</td>
+          </tr>
+        ))}
+      </table>
     </>
   );
 };
