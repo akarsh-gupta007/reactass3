@@ -32,3 +32,8 @@ input {
     width: 80%;
     margin-top: 7px;
 }
+table{
+    width:100%;
+ position: absolute;
+ top: 700px;
+}

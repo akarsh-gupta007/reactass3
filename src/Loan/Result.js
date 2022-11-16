@@ -26,7 +26,7 @@ const Result = (props) => {
             <div className="box">
               {index + 1}.Amount: {value.amount} |Rate of Interest:{value.rate} |
               Months: {value.months}
-              <button onClick={() => { showTable(value.amount, value.rate, value.months) }}>(400,2,12)
+              <button onClick={() => { showTable(value.amount, value.rate, value.months) }}>
                 Click to see EMI/Month</button>
             </div>
           );
